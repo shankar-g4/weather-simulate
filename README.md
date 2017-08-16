@@ -97,3 +97,5 @@ email : shankar.g4@tcs.com
 [![WM](https://upload.wikimedia.org/wikipedia/commons/f/f8/License_icon-mit-88x31-2.svg)](https://github.com/shankar-g4/weather-simulate/blob/master/LICENSE)
 
 Licensed under MIT
+
+Copyright (c) 2017 shankar-g4
