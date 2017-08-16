@@ -1,0 +1,5 @@
+com/weather/simulate/test/AllTests.class
+com/weather/simulate/test/WeatherGeneratorTest.class
+com/weather/simulate/test/ConditionUtilsTest.class
+com/weather/simulate/test/WeatherPredictorTest.class
+com/weather/simulate/test/DateUtilTest.class
