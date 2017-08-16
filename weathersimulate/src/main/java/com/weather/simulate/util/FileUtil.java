@@ -17,11 +17,20 @@ import java.util.List;
  */
 public class FileUtil {
 
+	/**
+	 * @param filepath
+	 * @return InputStream instance
+	 */
 	public InputStream getResourceFile(String filepath) {
 		InputStream is = this.getClass().getClassLoader().getResourceAsStream(filepath);
 		return is;
 	}
 
+	/**
+	 * write the list of string to file
+	 * @param outFilepath
+	 * @param lines
+	 */
 	public static void writeToFile(String outFilepath, List<String> lines) {
 		Path file = Paths.get(outFilepath);
 		try {

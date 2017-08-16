@@ -1,6 +1,5 @@
 package com.weather.simulate.main;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -66,16 +65,13 @@ public class Main {
 		for(String location : locations) {
 			String numDays = args[1]; // number of days
 			List<String> monthList = new ArrayList<String>();
-			List<File> fileList = new ArrayList<File>();	
 			List<String> filepathList = new ArrayList<String>();
 			Date startDate = DateUtil.stringToDate(startDateStr);
 			int month = DateUtil.getMonth(startDate);
 			monthList.add(DateUtil.getMonthForInt(month-1));
 			monthList.add(DateUtil.getMonthForInt(month));
 			for(String mnth : monthList) {
-//				File file = new File(WeatherUtil.getInputFile(location, mnth));
 				String filepath = WeatherUtil.getInputFile(location, mnth);
-//				fileList.add(file);
 				filepathList.add(filepath);
 			}
 			InputData inputData = new InputData();

@@ -1,6 +1,5 @@
 package com.weather.simulate.reader;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,9 +42,6 @@ public class InputDataReader {
         for(String filepath : fileList) {
         	
         	try {
-				
-				/*ClassLoader classLoader = getClass().getClassLoader();
-				file = new File(classLoader.getResource(file.getPath()).getFile());*/
 				InputStream is = getClass().getClassLoader().getResourceAsStream(filepath);
 				@SuppressWarnings("resource")
 				CSVReader csvReader = new CSVReader(new InputStreamReader(is));
@@ -55,7 +51,6 @@ public class InputDataReader {
 				}
 				csvReader.readNext();//skip headers
 				for(int i = 0; i < monthDay ; i++) {
-//				while(null!=csvReader.readNext()) {
 					line = csvReader.readNext();
 					Temperature temp = new Temperature();
 					temp.setValue(new Double(line[9]));

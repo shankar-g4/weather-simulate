@@ -4,7 +4,7 @@
 
 	<groupId>com.weather.simulate</groupId>
 	<artifactId>weathersimulate</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>weathersimulate</name>
@@ -16,6 +16,7 @@
 
 
 	<build>
+	
 		<plugins>
 			<!-- plugin to create executable jar with dependencies -->
 			<plugin>
@@ -43,6 +44,10 @@
 				</executions>
 			</plugin>
 		</plugins>
+		
+		
+	<!-- 	<finalName>weather-simulator</finalName> -->
+		
 	</build>
 
 

@@ -94,7 +94,6 @@ public class WeatherGenerator {
 		try {
 			loc = mapper.readValue(is, Location.class);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 		outputData.setLocationName(loc.getName());
